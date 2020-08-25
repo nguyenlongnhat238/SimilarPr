@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(IMG/reinhart-julian-b2htsZsPGPc-unsplash.jpg);
+    background-position: center center;
+    background-size: 2000px ;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: whitesmoke;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+
+}
+/*CSS MENU*/
+nav.container-menu{
+    width: 100%;
+    height: 100px;
+}
+nav.menu{
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+/*-------------------------------------------*/
+div.name{
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+}
+.animate__animated.animate__zoomInDown{
+    -o-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    
+}
+/*------------------------------------------*/
+div.menu-namebrand img{
+    width: 100px;
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+}
+div.menu-namebrand img:hover
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+/*------------------------------------------*/
+div.menu-content ul{
+    list-style-type: none;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+}
+div.menu-content li{
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+div.menu-content li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 20px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-transition-duration: 0.5s; /*Webkit*/
+    -moz-transition-duration: 0.5s; /*Mozilla*/
+    -o-transition-duration: 0.5s; /*Opera*/
+}
+div.menu-content li a:hover{
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1);
+}
+/*----------------------*/
+.dropdown-content{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: opacity ease 1s;
+    margin-left: -200px;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    visibility: visible;
+}
+/*-------------------------------------------------------------*/
+/*CSS Phan*/
+@keyframes doimauchu{
+    0% {color: tomato; width: 600px;}
+    50% {color: yellow; width: 800px;}
+    100%{color: lightgreen; width: 1000px;}
+}
+
+section.bestseller{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+/*--------product----------------------*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    position: relative;
+    width: 40%;
+    margin: 2%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .product:hover .overlay {
+    height: 50%;
+  }
+  
+  .text-product {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /*CSS FOOTER*/
+  footer.footer{
+      margin-top: 100px;
+      padding: 5%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .footer ul li{
+      padding: 5px;
+  }
+  .footer-contact{
+      color: seashell;
+      width: 30%;
+      text-align: right;
+  }
+  .footer-name{
+      width: 30%;
+  }
+.footer-link{
+    width: 30%;
+    color: seashell;
+    text-align: right;
+}
+.footer-link a{
+    color: seashell;
+}
+div.footer-link, div.footer-contact > ul > li:first-child{
+    padding: 20px;
+    text-transform: uppercase;
+}
+.product-footer{
+    position: relative;
+    padding-right: 20px;
+}
+.footer-icon{
+    width: 100%;
+    text-align: center;
+}
+.footer-icon a{
+    color: seashell;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+}
+/*CSS TIEU DE MOI TRANG WEB*/
+.section-header a{
+    display: inline-block;
+    color: seashell;
+    padding: 12px;
+}
+.section-header{
+    color: seashell;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.section-header > h4{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+}
+.section-title{
+    text-align: center;
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+}
+/*CSS ABOUT*/
+.about{
+    color: seashell !important;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+}
+section.about-size{
+    background-image: url(IMG/Sneaker3.jpg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+div.table-background{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    padding: 100px;
+}
+div.container-table{
+    width: 100%;
+    padding: 20px;
+}
+div.table{
+    color: black;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    
+}
+thead{
+    font-weight: bold;
+}
+table.table{
+    padding: 16px !important;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+tr.table-tr{
+    border: none;
+    border-bottom: 1px solid slategray;
+}
+tr.table-tr td, tr.table-tr th{
+    padding: 1,5rem;
+    vertical-align: middle;
+}
+tr.table-tr:hover{
+    background-color: deepskyblue;
+}

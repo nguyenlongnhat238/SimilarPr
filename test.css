@@ -1,0 +1,42 @@
+header.menu{
+    background-image: url(IMG/backgroundccc.jpg);
+}
+div.menu-namebrand{
+    width: 500px;
+}
+div.menu-namebrand img{
+    display: block;
+    padding: 20px;
+    width:100px;
+}
+nav.menu{
+    background-color: #333 ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+div.menu-content ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+div.menu-content li {
+    display: inline-block;
+  }
+  
+div.menu-content li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+div.menu-content li a:hover {
+    background-color: #111;
+  }
