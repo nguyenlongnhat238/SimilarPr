@@ -137,7 +137,7 @@ section.bestseller{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.5);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -149,7 +149,7 @@ section.bestseller{
   }
   
   .text-product {
-    color: black;
+    color:   rgb(255, 221, 169)  !important ;
     font-size: 20px;
     position: absolute;
     top: 50%;
