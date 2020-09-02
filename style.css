@@ -206,7 +206,11 @@ div.product-page {
   }
   
   .text-product {
+<<<<<<< Updated upstream
     color: black;
+=======
+    color: black  !important ;
+>>>>>>> Stashed changes
     font-size: 20px;
     position: absolute;
     top: 50%;
