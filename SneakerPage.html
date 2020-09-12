@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="note-page">
-                  <input type="button" value="Buy" onclick="openNav()">
+                  <input type="button" value="Buy" onclick="openNav()" data="S1" data-name="ASICS GEL-NANDI 360" data-price="169,95$">
                   <h3>ASICS GEL-NANDI 360</h3>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="note-page">
-                  <input type="button" value="Buy">
+                  <input type="button" value="Buy" onclick="openNav()" data="S2" data-name="REEBOK INSTAPUMP FURY OG NM" data-price="169,95$">
                   <h3>REEBOK INSTAPUMP FURY OG NM</h3>
                 </div>
               </div>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="note-page">
-                  <input type="button" value="Buy">
+                  <input type="button" value="Buy" onclick="openNav()" data="S3" data-name="ADIDAS ORIGINALS RIVALRY LOW" data-price="89,98$">
                   <h3>ADIDAS ORIGINALS RIVALRY LOW</h3>
                 </div>
               </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="note-page">
-                  <input type="button" value="Buy">
+                  <input type="button" value="Buy" onclick="openNav()" data="S4" data-name="JORDAN ZOOM '92" data-price="149,95$">
                   <h3>JORDAN ZOOM '92</h3>
                 </div>
               </div>
@@ -125,7 +125,7 @@
                   </div>
               </div>
               <div class="note-page">
-                <input type="button" value="Buy">
+                <input type="button" value="Buy" onclick="openNav()" data="S5" data-name="Nike Air Max 90 WW trainers in white" data-price="139,99$">
                 <h3>Nike Air Max 90 WW trainers in white</h3>
               </div>
             </div>
@@ -138,7 +138,7 @@
                   </div>
               </div>
               <div class="note-page">
-                <input type="button" value="Buy">
+                <input type="button" value="Buy" onclick="openNav()" data="S6" data-name="Nike Air Max 90 WW trainers in black" data-price="114.95$">
                 <h3>Nike Air Max 90 WW trainers in black</h3>
               </div>
             </div>
@@ -180,6 +180,8 @@
                 </div>
               </footer>
             
+              <!--Tiến hành thanh toán-->
+              <!----------------------------------------------------------------------------------->
               <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <form class="billOf">
@@ -210,9 +212,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Tên sản phẩm đặt hàng: </td>
+                            <td>Tên sản phẩm: </td>
                             <td>
-                                <textarea placeholder="Product..." id="" cols="5" rows="2" style="margin: 0px; width: 171px; height: 62px;"></textarea>
+                                <textarea id="noteSlide" placeholder="Product..." id="" cols="5" rows="2" style="margin: 0px; width: 171px; height: 62px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Giá</td>
+                            <td id="priceSlide">
+                                
                             </td>
                         </tr>
                         <tr>
@@ -246,9 +254,18 @@
                         </tr>
                     </table>
                 </form>
+                <div class="imgSlide">
+                    <img id="imgSlide" src="IMG/S1_1.jpg" alt="LOGO">
+                    <div class="thumb">
+                        <div><img id="imgSlide1" src="IMG/S1_1.jpg" alt="LOGO"></div>
+                        <div><img id="imgSlide2" src="IMG/S1_2.jpg" alt="LOGO"></div>
+                        <div><img id="imgSlide3" src="IMG/S1_3.jpg" alt="LOGO"></div>
+                    </div>
+                </div>
               </div>
-
-
               
+              
+        <!--GO TO TOP-->
+        <a href="#" class="goToTop" id="Gotop"><i class="fa fa-chevron-up"></i></a>
     </body>
 </html>

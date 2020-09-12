@@ -4,6 +4,9 @@
 img{
     cursor: pointer;
 }
+input{
+    cursor: pointer;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -144,6 +147,8 @@ div.box-product{
     -webkit-transition-duration: 0.5s; /*Webkit*/
     -moz-transition-duration: 0.5s; /*Mozilla*/
     -o-transition-duration: 0.5s; /*Opera*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 div.box-product:hover{
     -webkit-transform:scale(1.1);
@@ -372,6 +377,12 @@ tr.table-tr:hover{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+  /*-------------------------------*/
+
+  form.billOf{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
   .billOftb tr td:first-child{
       width: 100px;
       display: block;
@@ -385,10 +396,38 @@ table.billOftb input{
     background: none;
     border: 1px solid black;
 }
-table.billOftb input[type=radio]{
+table.billOftb input[type=radio]{   
     width: 15px;
     height: 15px;
 }
+
+div.imgSlide{
+    width: 300px;
+    margin: 10px auto;
+}
+div.imgSlide img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.5s; /*Webkit*/
+    -moz-transition-duration: 0.5s; /*Mozilla*/
+    -o-transition-duration: 0.5s; /*Opera*/
+}
+div.imgSlide img:hover{
+    -webkit-transform:scale(1.3);
+    -moz-transform:scale(1.3); 
+    -o-transform:scale(1.3);
+}
+/*THUMB*/
+
+    .thumb{
+        display: flex;
+    }
+    .thumb div img{
+        padding: 5px;
+        border-radius: 10px;
+    }
+  /*HOver thumb*/
+  
 /*CSS Go to top*/
 a.goToTop{
     display: inline-block;
@@ -405,3 +444,4 @@ a.goToTop{
 a.goToTop:hover{
     color: white;
 }
+
