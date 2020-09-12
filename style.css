@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+img{
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(IMG/reinhart-julian-b2htsZsPGPc-unsplash.jpg);
     background-position: center center;
@@ -28,12 +34,15 @@ nav.container-menu{
 nav.menu{
     display: flex;
     justify-content: space-around; 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+}
+.menu-scroll{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /*-------------------------------------------*/
 div.name{
@@ -330,4 +339,69 @@ tr.table-tr td, tr.table-tr th{
 }
 tr.table-tr:hover{
     background-color: deepskyblue;
+}
+
+
+
+
+/*CSS Buy*/
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .billOftb tr td:first-child{
+      width: 100px;
+      display: block;
+  }
+.billOftb tr td{
+    padding: 10px;
+}
+table.billOftb input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid black;
+}
+table.billOftb input[type=radio]{
+    width: 15px;
+    height: 15px;
+}
+/*CSS Go to top*/
+a.goToTop{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+a.goToTop:hover{
+    color: white;
 }
