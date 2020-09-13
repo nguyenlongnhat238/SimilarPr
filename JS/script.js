@@ -6,7 +6,7 @@ window.addEventListener("scroll", function(){
 })
 // hàm mở khung đặt hàng
 function openNav() {
-    document.getElementById("mySidebar").style.width = "400px";
+    document.getElementById("mySidebar").style.width = "500px";
   }
 //Hàm đóng khung đặt hàng
 function closeNav() {
@@ -40,6 +40,7 @@ $(document).ready(function(){
         $(this).attr('src')
         $("#imgSlide").attr("src", $(this).attr('src'))
     })
+
 
 })
 
