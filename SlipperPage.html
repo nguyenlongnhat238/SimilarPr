@@ -178,7 +178,95 @@
                   <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
                 </div>
               </footer>
-              
+                   <!--Tiến hành thanh toán-->
+              <!----------------------------------------------------------------------------------->
+              <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <form class="billOf">
+                    <table class="billOftb">
+                        <tr>
+                            <td>Họ tên: </td>
+                            <td>
+                                <input type="text" placeholder="name..." id="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ngày tháng năm sinh:</td>
+                            <td>
+                                <input type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính</td>
+                            <td>
+                                <input type="radio" name="gioitinh" checked> Male
+                                <input type="radio" name="gioitinh"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại</td>
+                            <td>
+                                <input type="numb" placeholder="Phone..." required id="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tên sản phẩm: </td>
+                            <td>
+                                <textarea id="noteSlide" placeholder="Product..." id="" cols="5" rows="2" style="margin: 0px; width: 171px; height: 62px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Giá</td>
+                            <td id="priceSlide">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>
+                                <select>
+                                    <option value="Size">37</option>
+                                    <option value="Size">38</option>
+                                    <option value="Size">39</option>
+                                    <option value="Size">40</option>
+                                    <option value="Size">41</option>
+                                    <option value="Size">42</option>
+                                    <option value="Size">43</option>
+                                    <option value="Size">44</option>
+                                </select> VN
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mail: </td>
+                            <td>
+                                <input type="email" placeholder="Mail..." required id="mail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="reset">
+                            </td>
+                            <td>
+                                <input type="button" value="Thanh toán" id="buy">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="imgSlide">
+                    <img id="imgSlide" src="IMG/S1_1.jpg" alt="LOGO">
+                    <div class="thumb">
+                        <div><img id="imgSlide1" src="IMG/S1_1.jpg" alt="LOGO"></div>
+                        <div><img id="imgSlide2" src="IMG/S1_2.jpg" alt="LOGO"></div>
+                        <div><img id="imgSlide3" src="IMG/S1_3.jpg" alt="LOGO"></div>
+                    </div>
+                </div>
+              </div>
+              <!--------------------------Modal box---------------------------->
+              <div id="dialog">
+                <div class="dialogContent">
+                    <div>Bạn đã đặt hàng thành công, chúng tôi sẽ liên hệ cho bạn nhanh nhất có thể!</div>
+                </div>
+              </div>
         <!--GO TO TOP-->
         <a href="#" class="goToTop" id="Gotop"><i class="fa fa-chevron-up"></i></a>
     </body>
