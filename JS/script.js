@@ -43,5 +43,61 @@ $(document).ready(function(){
 
 
 })
+//validate
+$(document).ready(function(){
+    var n,p,m;
+    $("#buy").click(function validateName(){
+         if ($("#name").val()=="")
+        {
+             $("#name").css("border","red solid 3px");
+            return false;
+        }
+        else{
+         $("#name").css("border","none");
+         n=true;
+         return true;
+        }
+         })
+    $("#buy").click(function validatePhone(){
+        var filterPhone=/^\d{10}$/;
+        if($("#phone").val().match(filterPhone))
+        {
+            $("#phone").css("border","none");
+            p=true;
+            return true;
+         }
+        else
+        {
+            $("#phone").css("border","red solid 3px");
+            return false;
+        }
+          })
+    $("#buy").click(function validateMail(){
+    var filterMail= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if ($("#mail").val().match(filterMail))
+    {
+        $("#mail").css("border","none");
+        m=true;
+        return true;
+    }
+    else
+    {
+        $("#mail").css("border","red solid 3px");
+        return false;
+    }
+   })
+   
+$("#buy").click(function(){
+        if(n==true && p==true &&m==true) 
+         {
+            document.getElementById("dialog").style.display="block";
+          }
+    } )
+})
 
 
+window.onclick = function(event) {
+    if (event.target ==document.getElementById("dialog") ) {
+        document.getElementById("dialog").style.display = "none";
+    }
+  }
