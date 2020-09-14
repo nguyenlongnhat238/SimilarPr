@@ -586,4 +586,13 @@ a.goToTop:hover{
     .container-table{
         overflow: auto;
     }
+    .sidebar .closebtn{
+        position: static;
+    }
+    .Sneaker-Gallery-img{
+        padding: 5%;
+    }
+    .Sneaker-Gallery-box{
+        background-size: 600px;
+    }
 }
