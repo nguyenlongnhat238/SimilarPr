@@ -388,7 +388,7 @@ tr.table-tr:hover{
   .openbtn:hover {
     background-color: #444;
   }
-  @media screen and (max-height: 450px) {
+  @media screen and (max-height: 600px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
