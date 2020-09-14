@@ -95,6 +95,10 @@ $("#buy").click(function(){
     $(window).dblclick(function(){
         $("#dialog").hide('slow');
     })
+    
+    $("#dialogClose").click(function(){
+        $("#dialog").hide('slow');
+    })
 })
 
     window.onload = function(){

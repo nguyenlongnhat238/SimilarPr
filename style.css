@@ -480,13 +480,14 @@ a.goToTop:hover{
     display: none;
     position: fixed;
     padding-top: 100px;
-    left: 350px;
-    top: 250px;
-    right: 350px;
-    bottom: 250px;
+    left: 10%;
+    top: 20%;
+    right: 10%;
+    bottom: 20%;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     opacity: 0.9;
     border-radius: 25%;
+    overflow: auto;
  
 }
 .dialogContent {
@@ -515,6 +516,7 @@ a.goToTop:hover{
  .Sneaker-Gallery{
      margin-top: 100px;
      background-image: url(IMG/Sneaker1.jpg);
+     background-position: center center;
  }
  .Sneaker-Gallery-box1{
      background-color: rgba(255, 255, 255, 0.8);
@@ -529,7 +531,7 @@ a.goToTop:hover{
  }
 
  /*RESPONSIVE*/
- @media screen and (max-width: 500px){
+ @media screen and (max-width: 800px){
     body{
         background-image: url(IMG/backgroundccc.jpg);
     }
@@ -570,5 +572,18 @@ a.goToTop:hover{
     }
     .footer-contact, .footer-link{
         text-align: center;
+        margin: 20px;
+    }
+    section.bestseller{
+        margin: 0 auto;
+    }
+    .product{
+        width: 60%;
+    }
+    div.note-page > input[type=button]{
+        width: 100px;
+    }
+    .container-table{
+        overflow: auto;
     }
 }
