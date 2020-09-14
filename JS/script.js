@@ -41,7 +41,6 @@ $(document).ready(function(){
         $("#imgSlide").attr("src", $(this).attr('src'))
     })
 
-
 })
 //validate
 $(document).ready(function(){
@@ -90,14 +89,35 @@ $(document).ready(function(){
 $("#buy").click(function(){
         if(n==true && p==true &&m==true) 
          {
-            document.getElementById("dialog").style.display="block";
+            $("#dialog").show('slow')
           }
     } )
+    $(window).dblclick(function(){
+        $("#dialog").hide('slow');
+    })
 })
 
-
-window.onclick = function(event) {
-    if (event.target ==document.getElementById("dialog") ) {
-        document.getElementById("dialog").style.display = "none";
+    window.onload = function(){
+        setTimeout("swithchImage()", 2000)
     }
-  }
+    var current = 1;
+    var numIMG = 3;
+    function swithchImage(){
+        current++;
+        $(".Sneaker-Gallery-box").css("background","url('IMG/Sneaker" + current + ".jpg')");
+        $(".Sneaker-Gallery-img img").attr("src", `IMG/Sneaker${current}.jpg`)
+        if(current == numIMG)
+        {
+            current = 0;
+        }
+        if(current < numIMG){
+            setTimeout("swithchImage()", 2000)
+        }
+    }
+
+
+// window.onclick = function(event) {
+//     if (event.target ==document.getElementById("dialog") ) {
+//         document.getElementById("dialog").style.display = "none";
+//     }
+//   }
