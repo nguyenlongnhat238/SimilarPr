@@ -135,8 +135,7 @@ div.menu-content li a:hover{
 }
 
 section.bestseller{
-    margin-top: 200px;
-    margin-left: 200px;
+    margin: 0 150px;
 }
 /*--------product page----------------------*/
 b.dolar{
@@ -198,6 +197,7 @@ div.product-page {
 .products{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .product {
     position: relative;
@@ -246,6 +246,7 @@ div.product-page {
       background-color: rgba(0, 0, 0, 0.3);
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
   }
   .footer ul li{
       padding: 5px;
@@ -526,3 +527,48 @@ a.goToTop:hover{
  .Sneaker-Gallery-img img{
      width: 100%;
  }
+
+ /*RESPONSIVE*/
+ @media screen and (max-width: 1000px){
+    body{
+        background-image: url(IMG/backgroundccc.jpg);
+    }
+    nav.menu{
+        display: flexbox;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: none;
+        visibility: visible;
+        position: static;
+
+    }
+    nav.container-menu{
+        width: 100%;
+        height: 300px;
+    }
+    div.name{
+        width: 100%;
+        text-align: center;
+    }
+    div.menu-namebrand{
+        display: inline;
+        text-align: center;
+        width: 100%;
+    }
+    div.menu-content{
+        width: 100%;
+        text-align: center;
+    }
+    div.list-menu{
+        display: flex;
+        justify-content: center;
+    }
+    div.dropdown-content{
+        display: flex;
+        justify-content: center;
+        margin-left: -25px;
+    }
+    .footer-contact, .footer-link{
+        text-align: center;
+    }
+}
