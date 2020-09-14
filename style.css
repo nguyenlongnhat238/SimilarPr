@@ -488,4 +488,19 @@ a.goToTop:hover{
     font-size: 20px;
     color: #ffebcd;
   }
- 
+  h3{
+      text-align: center;
+  }
+ .about-content{
+     display: flex;
+     text-align: center;
+ }
+ .aboutFlex{
+     width: 50%;
+     margin: 5px;
+     
+ }
+ .imgFlex{
+     width: 100%;
+     height: auto;
+ }
