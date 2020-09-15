@@ -602,8 +602,8 @@ a.goToTop:hover{
     div.box-product{
         width: 40%;
      }
-     .overlay{
-         overflow: auto;
+     .product:hover .overlay{
+         height: 100%;
      }
          /*GALLERY HOMEPAGE*/
     .Sneaker-Gallery-img{
