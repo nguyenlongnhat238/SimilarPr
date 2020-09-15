@@ -105,7 +105,7 @@ $("#buy").click(function(){
         setTimeout("swithchImage()", 2000)
     }
     var current = 1;
-    var numIMG = 3;
+    var numIMG = 15;
     function swithchImage(){
         current++;
         $(".Sneaker-Gallery-box").css("background","url('IMG/Sneaker" + current + ".jpg')");
