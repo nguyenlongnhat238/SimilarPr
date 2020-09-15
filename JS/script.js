@@ -1,5 +1,12 @@
 
-//hàm tạo background cho nav menu khi lăn chuột cuộn trang 
+//hàm tạo background cho nav menu khi lăn chuột cuộn trang
+$(window).on("load", function(){
+    $('#load').delay(4000).fadeOut('fast', function(){
+        $('body').delay(4000).removeClass('preloading');
+    });
+    
+})
+
 window.addEventListener("scroll", function(){
     var a = document.querySelector("nav.menu")
     a.classList.toggle("menu-scroll", window.scrollY > 0);
@@ -127,3 +134,8 @@ $("#buy").click(function(){
 //         document.getElementById("dialog").style.display = "none";
 //     }
 //   }
+window.addEventListener("load",function(){
+    var load = document.querySelector('.load');
+    load.style.display = 'none';
+
+})
