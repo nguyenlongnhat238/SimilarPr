@@ -541,6 +541,7 @@ a.goToTop:hover{
     body{
         background-image: url(IMG/backgroundccc.jpg);
     }
+    /* ---------NAV--------------- */
     nav.menu{
         display: flexbox;
         flex-direction: column;
@@ -574,12 +575,21 @@ a.goToTop:hover{
     div.dropdown-content{
         display: flex;
         justify-content: center;
-        margin-left: -25px;
+        margin-left: -10px;
     }
+    div.menu-content li{
+        width: auto;
+    }
+    div.menu-content ul{
+        padding-left: 0;
+    }
+
+    /* FOOTER */
     .footer-contact, .footer-link{
         text-align: center;
         margin: 20px;
     }
+    /*HOME PAGE PRODUCT and Product page*/
     section.bestseller{
         margin: 0 auto;
     }
@@ -589,16 +599,22 @@ a.goToTop:hover{
     div.note-page > input[type=button]{
         width: 100px;
     }
-    .container-table{
-        overflow: auto;
-    }
-    .sidebar .closebtn{
-        position: static;
-    }
-    .Sneaker-Gallery-img{
-        padding: 5%;
-    }
     div.box-product{
         width: 40%;
      }
+         /*GALLERY HOMEPAGE*/
+    .Sneaker-Gallery-img{
+        padding: 5%;
+    }
+ 
+    /*ABOUT PAGE TABLE*/
+    .container-table{
+        overflow: auto;
+    }
+    /*SIDEBAR BUY SOME THING*/
+    .sidebar .closebtn{
+        position: static;
+    }
+
+    
 }
