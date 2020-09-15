@@ -90,6 +90,7 @@ $("#buy").click(function(){
         if(n==true && p==true &&m==true) 
          {
             $("#dialog").show('slow')
+            closeNav();
           }
     } )
     $(window).dblclick(function(){
@@ -98,6 +99,7 @@ $("#buy").click(function(){
     
     $("#dialogClose").click(function(){
         $("#dialog").hide('slow');
+       
     })
 })
 

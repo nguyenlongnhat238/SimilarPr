@@ -510,13 +510,9 @@ a.goToTop:hover{
  }
  .aboutFlex{
      width: 50%;
-     margin: 5px;
+     margin: 10px;
      text-shadow: 2px 2px black;
      
- }
- .imgFlex{
-     width: 100%;
-     height: auto;
  }
  /*------------------------------------*/
  .Sneaker-Gallery{
@@ -621,3 +617,18 @@ a.goToTop:hover{
 
     
 }
+/*Img about*/
+.imgFlex{
+    width: 90%;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.5s; /*Webkit*/
+    -moz-transition-duration: 0.5s; /*Mozilla*/
+    -o-transition-duration: 0.5s; /*Opera*/
+}
+.imgFlex:hover{
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1);
+}
+
+
