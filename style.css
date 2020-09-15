@@ -602,6 +602,9 @@ a.goToTop:hover{
     div.box-product{
         width: 40%;
      }
+     .text-product{
+         overflow: auto;
+     }
          /*GALLERY HOMEPAGE*/
     .Sneaker-Gallery-img{
         padding: 5%;
