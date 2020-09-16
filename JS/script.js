@@ -1,7 +1,7 @@
 
 //hàm tạo background cho nav menu khi lăn chuột cuộn trang
 $(window).on("load", function(){
-    $('#load').delay(4000).fadeOut('fast', function(){
+    $('#load').delay(4000).fadeOut('slow', function(){
         $('body').delay(4000).removeClass('preloading');
     });
     
@@ -93,7 +93,7 @@ $(document).ready(function(){
     }
    })
    
-$("#buy").click(function(){
+    $("#buy").click(function(){
         if(n==true && p==true &&m==true) 
          {
             $("#dialog").show('slow')
@@ -134,8 +134,3 @@ $("#buy").click(function(){
 //         document.getElementById("dialog").style.display = "none";
 //     }
 //   }
-window.addEventListener("load",function(){
-    var load = document.querySelector('.load');
-    load.style.display = 'none';
-
-})
